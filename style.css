@@ -26,6 +26,7 @@ body{
     min-height: 100v;
     background-color: violet;
 }
+
 main{
     flex: 1;
     display: flex;
@@ -44,6 +45,20 @@ h1{
 
 footer{
     background-color: blue;
-    padding: 15xp 25px;
+    padding: 15px 25px;
     color: azure;
+}
+
+.cartao-interno{
+    position: relative;
+    transition: transform 0,8s;
+    transform-style: preserve-3d;
+}
+
+.cartao:hover .cartao-interno{
+    transform: rotateY(180deg);
+}
+
+.cartao-frente, .cartao-verso{
+
 }
