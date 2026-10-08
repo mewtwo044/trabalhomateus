@@ -30,7 +30,8 @@ body{
 main{
     flex: 1;
     display: flex;
-    flex-direction: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .cabecalho-link{
@@ -60,5 +61,16 @@ footer{
 }
 
 .cartao-frente, .cartao-verso{
+ position: absolute;
+ border-radius: 12px;
+ box-shadow: 0 6px 12px rgba;
+backface-visibility: hidden;
 
+}
+.cartao-verso{
+    transform: rotateY(180deg);
+}
+section{
+    display: flex;
+    gap: 16px;
 }
